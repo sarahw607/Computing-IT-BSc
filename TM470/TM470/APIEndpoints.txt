@@ -1,0 +1,4 @@
+POST   /users - create new user on sign up
+GET    /users/:userId - get user on login, will also get their ingredients
+POST   /users/:userId/ingredients - create new ingredient for user
+DELETE /users/:userId/ingredients/:ingredientId - delete ingredient for user
