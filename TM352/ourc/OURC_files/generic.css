@@ -1,0 +1,238 @@
+*{outline:none;margin:0;padding:0;border:0}
+a{text-decoration:none;color:#069;cursor:pointer;_cursor:hand}
+a:hover{text-decoration:underline}
+body{border:none;font-family:arial,sans-serif;font-size:0.65em;_font-size:1em;background:#ebf4fb url('../images/bg_body.png') repeat-x 0 0}
+input::-moz-focus-inner{border:0;padding:0}
+.cnone{clear:none !important}
+.clear{clear:both}
+.cleft{clear:left}
+.cright{clear:right}
+.right{text-align:right}
+.left{text-align:left}
+.center{text-align:center}
+.fright{float:right}
+.fleft{float:left}
+.hideme{display:none}
+.nowrap{white-space:nowrap}
+.round{position:relative;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;behavior:url('/css/PIE.php')}
+.accessibility{display:none}
+
+body.cms{background-image:none;padding:5px;font-size:12px;background-color:#fff}
+body.cms p{padding:0 0 12px 0;margin:0;line-height:1.4em}
+body.cms ul,body.cms ol{padding:0 0 12px 0;margin:0}
+
+body.popup{background-image:none;padding:5px;font-size:12px;background-color:#fff}
+
+p.error{display:none;margin:12px 0 8px 0;font-size:12px;border:2px solid #c00;color:#c00 !important;background:#f9f9f5;padding:10px}
+
+#page_container{width:940px;padding:3px 20px 20px 20px;background:#fff;margin:0 auto}
+#footer{width:980px;padding:15px 0;margin:0 auto;color:#666;font-size:1.2em;line-height:1.3em}
+#header{height:115px;font-size:1.2em}
+#header .ou{position:absolute;display:block;width:83px;height:56px;margin-top:35px;background:url('../images/ou_logo.png') no-repeat 0 0;text-indent:-9999px}
+#header .ourc{position:absolute;display:block;width:382px;height:50px;margin:41px 0 0 109px;background:url('../images/ourc_logo.png') no-repeat 0 0;text-indent:-9999px}
+#header ul{float:right;list-style:none;height:16px;padding-top:5px}
+#header ul li{display:inline;border-left:1px solid #ebebe3;padding:0 0 0 11px;margin:0 0 0 10px}
+#header a.rss{display:inline-block;height:16px;background:url('../images/rss.png') no-repeat 0 0;padding-left:29px}
+#header a.sel{text-decoration:underline}
+#header form{clear:both;float:right;padding-top:23px}
+#header form p{float:left}
+form .round{width:46px;height:27px;padding:0;background:#baba3f;color:#fff;cursor:pointer;font-size:12px;#top:1px}
+form .round:hover{background:#99992a}
+form input[type=text]{border:1px solid #ccc;color:#666;height:25px;padding:0 6px;width:230px;margin:0 14px 0 0;#height:21px;#padding:4px 6px 0 6px}
+form textarea{font-family:arial;font-size:12px;border:1px solid #ccc;color:#666;padding:6px;width:295px;margin:0 14px 0 0;#padding:4px 6px 0 6px}
+
+#navigation{width:940px;height:27px;border-bottom:3px solid #408282;background:#408282;list-style:none;font-size:1.2em;overflow:hidden}
+#navigation li{display:block;float:left}
+#navigation a{display:inline-block;height:21px;padding:5px 61px 0 14px;background:#003d3d;color:#fff;border-right:1px solid #408282;border-top:1px solid #668b8b}
+#navigation a.sel{background:#408282;border-color:#408282;font-weight:bold;padding-right:61px}
+
+#breadcrumbs{clear:both;display:block;height:28px;list-style:none;overflow:hidden}
+#breadcrumbs li{display:inline-block;font-size:1.1em;height:20px;padding:8px 18px 0 0;margin-right:10px;background:url('../images/arw01.png') no-repeat 100% 50%;#display:block;#float:left;#position:relative}
+#breadcrumbs a{color:#767667}
+
+.column{display:block;float:left}
+
+#leftnav{width:140px;margin-right:15px}
+#leftnav ul{margin:0;padding:8px 0 0 0;list-style:none;font-size:12px}
+#leftnav a{display:block;height:22px;color:#224e7a;padding:8px 0 0 10px;margin:0 0 5px 0}
+#leftnav a.sel{background:#e0eded;color:#003d3d}
+#leftnav a.parent{color:#003d3d}
+#leftnav .lvl2 a{padding-left:20px}
+
+#main{width:940px}
+#main pre{font-size:12px}
+
+#carousel{display:block;width:620px;height:345px;overflow:hidden;background:#ebebe3;margin:0 0 30px 0}
+#carousel ul{list-style:none;width:620px;height:300px;overflow:hidden}
+#carousel li{position:absolute;border-bottom:1px solid #fff;width:620px;height:300px;cursor:pointer}
+#carousel .controls{height:29px;padding:15px 15px 0 15px}
+#carousel .dot{display:block;width:11px;height:11px;font-size:9px;float:right;background:url('../images/dots01.png') no-repeat 0 0;margin:2px 0 0 6px;cursor:pointer}
+#carousel .dotsel{background-position:0 -11px}
+#carousel .overlay{display:block;z-index:100;width:590px;height:42px;padding:8px 15px 0 15px;position:absolute;margin-top:250px;background:url('../images/alpha.png') repeat 0 0;color:#fff;font-size:12px;white-space:nowrap;cursor:pointer}
+#carousel .overlay p{display:none;cursor:pointer}
+#carousel .overlay span{display:block;font-size:11px;margin-top:1px}
+
+.content h1{color:#767667;font-weight:normal;font-size:24px;margin:6px 0 16px 0}
+.content h2{color:#767667;font-size:18px;line-height:24px;font-weight:normal}
+.content h2.title{font-weight:normal !important;font-size:14px;position:relative;top:-18px}
+.content p{padding:0 0 12px 0;margin:0;line-height:1.4em;font-size:1.2em;color:#3f3f32}
+.content ul,#main ol{padding:0 0 12px 0;margin:0;color:#3f3f32}
+.content p.credits{color:#767667;font-size:1.1em}
+
+#further{width:300px;margin-left:20px}
+#further div.advert{display:block;width:300px;height:73px;padding-top:22px;overflow:hidden;cursor:pointer;text-align:right;margin:0 0 20px 0}
+#further div.advert p{display:block;float:right;padding:3px 4px 2px 4px;font-size:12px;clear:both;color:#fff;text-transform:uppercase;background:url('../images/alpha_light.png') repeat 0 0;#position:relative}
+#further div.advert p.large{color:#baba3f;font-size:24px;padding:5px 4px 0 6px;#position:relative}
+#further div.advert a{color:#fff}
+#further div.recordad{height:70px;padding-top:75px}
+#further div.advert:hover p{background-image:url('../images/alpha.png')}
+#further p.title{margin-top:18px;background:#ebebe3;color:#545442;border-top:1px solid #baba3f;font-size:1.3em;padding:6px 10px}
+#further p.title a{float:right}
+#further .panel{margin:0 0 20px 0;color:#545442;font-size:1.2em}
+#further .solid{background:#f6f6f0;padding:8px 10px}
+#further ul.races li{padding:10px 0;list-style:none;border-bottom:1px dotted #ccc}
+#further ul.races li img{float:left;margin-right:20px;cursor:pointer}
+#further ul.races li a,#further p.result a{display:inline-block;margin-bottom:4px}
+#further p.result{padding:10px 0}
+#further ol.results{color:#3f3f32;font-weight:bold;list-style-position:inside}
+#further ol.results li{border-bottom:1px dotted #ccc;padding:6px 0}
+#further ol.results span{font-weight:normal}
+#further ol.results em{font-style:normal;color:#545442}
+#further div.text{background:#f6f6f0;padding:8px 10px;font-size:1.2em;line-height:1.4em;color:#545442}
+#further div.filetext{padding:8px 0;font-size:1.2em;line-height:1.4em;color:#545442}
+#further p.advert{margin:20px 0 0 0}
+#further p.advert img{width:300px}
+#further ul.further{list-style:none;font-size:1.2em}
+#further ul.further li{padding:6px 0 0 0}
+#further ul.further a{display:inline-block;padding-left:18px;background:url('../images/icon01.png') no-repeat 0 1px}
+#further ul.further a.link{background:url('../images/icon02.png') no-repeat 3px 4px}
+#further ul.further a span{color:#545442}
+
+.content .linkcategory{cursor:pointer;background:#ebebe3;padding:5px 10px;font-size:1.2em;color:#036;border-bottom:3px solid #fff}
+.content .linkcategory:hover{text-decoration:underline}
+.content .linkcategorysel{color:#fff;background:#baba3f}
+.content ul.links{list-style:none;display:none}
+.content ul.links li{border-top:1px solid #e9e9e9;padding:10px 10px 2px 20px}
+.content ul.links li:first-child{border:none}
+.content ul.links li p{padding:0 0 8px 0}
+.content .faqs_list{padding:10px;border-bottom:1px dotted #ccc}
+.content .faqs_list p{padding:0 0 3px 0 !important}
+.content .faq{border-top:1px dotted #ccc;padding:10px 0}
+.content .faq p.question{font-weight:bold;font-size:14px !important}
+
+.newstitle{font-size:16px;color:#333;border-top:1px solid #baba3f;padding:6px 0 15px 0}
+.homenews{clear:both;position:relative;font-size:1.2em;padding:0 0 5px 0;margin:0 0 14px 0;border-bottom:1px dotted #ccc}
+.homenews p a{font-size:1.2em}
+.homenews p{padding:0 0 6px 0}
+.homenews p.date{color:#949481}
+.homenews p.credits{font-size:0.9em;color:#767667;padding-top:3px}
+.lastnews{border-bottom:0}
+
+ul.tabs{display:block;height:33px;background:url('../images/dots02.png') repeat-x 0 32px;margin:10px 0 20px 0;list-style:none;overflow:hidden;position:relative}
+ul.tabs li{display:inline}
+ul.tabs a{display:block;float:left;position:relative;;height:24px;background:#dcdcb7;color:#767667;margin-right:2px;padding:8px 10px 0 10px;font-size:14px;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;behavior:url('/css/PIE.php')}
+ul.tabs a.sel{border:1px solid #baba3f;border-bottom:1px solid #fff;background:#fff}
+
+ul.racedetails{list-style:none;font-size:1.2em}
+ul.racedetails li{padding:10px 0 0 0}
+ul.racedetails a{display:inline-block;padding:1px 0 0 25px;height:17px}
+ul.racedetails a.times{background:url('../images/icon_times.png') no-repeat 1px 0}
+ul.racedetails a.register{background:url('../images/icon_register.png') no-repeat 1px 0}
+ul.racedetails a.group{background:url('../images/icon_group.png') no-repeat 1px 0}
+ul.racedetails a.injury{background:url('../images/icon_injury.png') no-repeat 1px 0}
+ul.racedetails a.withdraw{background:url('../images/icon_withdraw.png') no-repeat 1px 0}
+
+.route_header{background:#9c9c88;color:#fff;font-size:1.2em;padding:5px 8px}
+.route_details{background:#f6f6f0;padding:20px}
+.route_details .map{width:277px;display:block;float:left;margin:0px 20px 10px 0}
+.route_details .map img{border:1px solid #96967e;width:275px;height:175px}
+.route_details h3{clear:both;color:#767667;font-size:18px;line-height:24px;font-weight:normal;margin:16px 0 0 0}
+.route_details h3:first-child{margin:0}
+.route_details .text{font-size:1.2em;color:#3f3f32;line-height:1.4em}
+.route_details .pdf{display:inline-block;padding-left:18px;background:url('../images/icon01.png') no-repeat 0 1px;margin-top:4px}
+.route_details .thumb{width:102px;display:block;float:left}
+.route_details .thumb img{border:1px solid #96967e;width:100px;height:100px}
+
+.eventdetails{cursor:pointer}
+.eventdetails p.title{font-size:110%}
+.eventdetails p.date{color:#96967e;padding:0 0 4px 0;font-size:90%}
+
+body.popup h1{color:#767667;font-size:24px;font-weight:normal}
+body.popup h2{color:#949481;font-size:14px;font-weight:normal;margin:2px 0 8px 0}
+body.popup h3{color:#003d3d;font-size:24px;font-weight:normal;margin:10px 0 0 0}
+body.popup p{color:#3f3f32;font-size:12px;line-height:1.5em}
+
+table.tablesorter{font-family:arial;margin:10px 0pt 15px;font-size:12px;text-align:left;border-bottom:3px solid #b7dbf1;border-collapse:collapse}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th{background-color:#b7dbf1;border:2px solid #fff;padding:8px;font-weight:normal}
+table.tablesorter thead tr .header{background-image:url('../images/bg.gif');background-repeat:no-repeat;background-position:center right;cursor:pointer}
+table.tablesorter tbody td{color:#3D3D3D;padding:8px;background-color:#f2f8fd;vertical-align:top;font-size:12px;border:2px solid #fff;}
+table.tablesorter tbody tr.odd td{background-color:#f2f8fd}
+table.tablesorter thead tr .headerSortUp{background-image:url('../images/asc.gif')}
+table.tablesorter thead tr .headerSortDown{background-image:url('../images/desc.gif')}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp{background-color:#8dbdd8}
+
+#starttimes{width:100%}
+#records{width:100%}
+#raceresults{width:100%}
+
+.racetitle{color:#767667;font-size:24px;font-weight:normal}
+.racedate{color:#949481;font-size:14px;font-weight:normal;margin:2px 0 8px 0}
+
+.mandatory{background:url('../images/mandatory.png') no-repeat 100% 4px;padding-right:7px}
+
+#pagesearch,#searchrunner{border-top:1px solid #baba3f;border-bottom:1px dotted #ccc;margin:0 0 5px 0;padding:15px 0}
+#pagesearch .round,#searchrunner .round{font-size:1.4em;width:80px}
+#pagesearch input[type=text],#searchrunner input[type=text]{width:820px;float:left}
+
+.searchresults{font-size:1.2em;list-style:none}
+.searchresults li{padding:3px 0}
+
+a.print{background:url('../images/icon_print.png') no-repeat 0 0;padding:0 0 0 25px;display:inline-block;height:18px;margin:0 0 0 10px}
+
+
+.allresults{width:100%;font-family:arial;margin:10px 0pt 15px;font-size:12px;text-align:left;border-bottom:3px solid #b7dbf1;border-collapse:collapse}
+.allresults thead tr th{text-align:center;font-weight:normal;background:#ffc500;padding:10px 0;border:2px solid #fff}
+.allresults tbody td{min-width:7%;color:#3D3D3D;padding:8px;background-color:#f2f8fd;vertical-align:top;text-align:center;Font-size:12px;border:2px solid #fff;}
+.allresults tbody td:first-child{font-weight:bold}
+
+
+.field{padding: 5px 10px 0 10px;font-size:1.2em}
+.field p.label{float:left;width:180px;text-align:right;margin-right:10px}
+.smallform p.label{width:100px !important}
+.field p.label label{display:inline-block;padding-top:10px}
+.field p.field{float:left;width:400px}
+.field p.field input.f{padding:3px;width:300px}
+.field p.field input.fs{width:150px}
+.field p.field input.fm{width:50px}
+.field p.field input.fy{width:70px}
+.field p.field textarea.f{padding:3px;width:300px}
+.field p.field select.f{padding:1px;width:310px}
+.field p.field label{margin:0 30px 0 5px}
+.field p.field strong{display:inline-block;padding-top:5px}
+.dots{background:url('../images/dots03.png') repeat-x 0 50%;height:11px;margin-top:5px}
+
+form button{font-size:14px !important;width:78px !important}
+form .buttons{clear:both;border-top:1px solid #767667;margin-top:10px;padding-top:12px}
+
+.benefit{font-size:1.2em;line-height:1.4em;border-bottom:1px dotted #ccc;padding:0 0 20px 0;margin:0 0 20px 0}
+.benefit .image{float:left}
+.benefit .details{float:left}
+
+.benefits{background:#f6f6f0;padding:15px 0}
+.benefits .arrow{display:block;z-index:100;position:absolute;width:13px;height:25px;margin-top:60px;background:url('../images/arw02.png') no-repeat 0 0}
+.benefits ul{width:150px;height:150px;overflow:hidden;margin:0 auto;list-style:none}
+#benefitleft{margin-left:10px;background-position:0 0}
+#benefitright{margin-left:275px;background-position:-13px 0}
+#benefitleft:hover{background-position:0 -25px}
+#benefitright:hover{background-position:-13px -25px}
+
+h3.search{font-size:14px;color:#666;margin:0 0 18px 0;font-weight:normal}
+h3.search strong{color:#3f3f32}
+div.search_results ul{margin:0 0 30px 0;list-style:none}
+div.search_results li {
+ margin: 4px 0;
+ font-size: 1.2em;
+ padding: 0 0 0 1px;
+}
+
+div.search_results li a span { color: #757488; }

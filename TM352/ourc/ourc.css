@@ -1,0 +1,7 @@
+img{
+    max-width:100%;
+}
+
+body {font-family: arial, sans-serif; font-size:100%; background: #ffffff;}
+a {text-decoration: none; color: #069;}
+a:hover {text-decoration: underline}
