@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <meta http-equiv="Content-Security-Policy">
+        <script type="text/javascript" src="cordova.js"></script>
+        <!-- jQuery -->
+        <link rel="stylesheet" type="text/css" href="js/jquery-1.5.0.mobile.min.css">
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js" id="cordova-jquery"></script>
+        <script type="text/javascript" id="jqm-trans-disable">
+            /* For having a faster transition */
+            $(document).on("mobileinit", function() {
+                            $.mobile.defaultPageTransition = "none";
+                            $.mobile.defaultDialogTransition = "none";
+            });
+        </script>
+        <script type="text/javascript" src="js/jquery-1.5.0.mobile.min.js"></script>        
+        <script type="text/javascript" src="js/index.js"></script>
+        <title>Taxi Sharing</title>    
+</head>
+<body>   
+        <div class="app">
+            <h1>Taxi Sharing</h1>
+            <!-- TODO 1(c) Google Map canvas -->
+            <canvas style="width:500px; height:300px;" id="map_canvas">
+			</canvas>
+
+            <div data-role="controlgroup" data-type="horizontal">
+                <!-- TODO 1(b)(i)-(v) Input text fields, 
+                OUCU shall have an ID "name", 
+                start time shall have an ID "time",     // MiL  Edited 10Mar18
+                end time shall have an ID "time2",      // MiL  Edited 10Mar18
+                address shall have and ID "addr" -->
+	            OUCU: <input type="text" size="20" id="name" value="user1">
+				Address: <input type="text" size="20" id="addr" value="">
+				Start Time: <input type="text" size="20" id="time" value="">
+				Duration (h): <input type="text" size="20" id="time2" value="">
+
+            </div>
+            <div data-role="controlgroup" data-type="horizontal">
+                <!-- TODO 1(b)(i)-(v) Function buttons:
+                (i) register (ii) volunteer (iii) request (iv) cancel (v) start / stop
+                -->
+				<button type="button" id="start" onclick="app.taxiShare.start()">Start</button>
+				<button type="button" id="stop" onclick="app.taxiShare.stop()">Stop</button>
+				<button type="button" id="register" onclick="app.taxiShare.register()">Register...</button>
+				<button type="button" id="volunteer" onclick="app.taxiShare.volunteer()">Volunteer...</button>
+            	<button type="button" id="request" onclick="app.taxiShare.request()">Request...</button>
+				<button type="button" id="cancel" onclick="app.taxiShare.cancel()">Cancel all</button>
+
+            </div>
+        </div>
+</body>
