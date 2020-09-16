@@ -1,0 +1,31 @@
+
+.column{
+    width: 45%;
+    display: inline-block;
+}
+p{
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+}
+
+#widgetImg{
+    display: block;
+    width: 100%;
+    height: 10%;
+}
+#widgetDesc{
+    position: relative;
+    top: 0;
+}
+
+.label{
+    width: 30%;
+}
+
+#hidden-content{
+    display: none;
+}
+
+#map_canvas{
+    display: none;
+}

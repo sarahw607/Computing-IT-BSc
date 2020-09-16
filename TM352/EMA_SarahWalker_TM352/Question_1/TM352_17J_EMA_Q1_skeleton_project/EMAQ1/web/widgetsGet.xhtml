@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+  <h:head>
+    <title>Widgets List</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/theme.css"/>
+  </h:head>
+  <h:body>
+
+    <h1>Widgets List</h1>
+    
+     <!--Here we call the method computeColour(), which takes a string as an 
+    argument, and also access the value of credentialsBean.name (twice)-->
+    <font size="5" color="#{credentialsBean.computeColour(credentialsBean.name)}">User #{credentialsBean.name} </font> 
+
+    <!--Here we call the credentialsBean method widgetsGet(). The outputText tag 
+    allows us to turn off escaping of characters in the response string.-->
+    <h:outputText escape="false" id="widgetsList" value="#{credentialsBean.widgetsGet()}"/>
+
+    <p> <a href="options.xhtml"> Go back to the options page </a> </p>  
+
+    <p> <a href="credentialsForm.xhtml"> Go back to the credentials page </a> </p> 
+
+  </h:body>
+</html>
+

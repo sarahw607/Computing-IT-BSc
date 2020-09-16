@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+MegaMax API options
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+  <head>
+    <title>Options</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/theme.css"/>
+  </head>
+  <body>
+    
+    <h1>MegaMax API Options</h1>    
+    
+    <!--Here we call the method computeColour(), which takes a string as an 
+    argument, and also access the value of credentialsBean.name (twice)-->
+    <font size="5" color="#{credentialsBean.computeColour(credentialsBean.name)}">User #{credentialsBean.name} </font> 
+    
+    <p>Bear in mind that you do not log in to the MegaMax server, so the
+    credentials you provided have not been checked.</p>
+     
+     <p>1. <a href="widgetsGet.xhtml">View the available widgets </a> </p> 
+     
+     <p>2. <a href="ordersGet.xhtml">View orders </a> </p> 
+          
+     <p>3. <a href="orderForm.xhtml">Make an order </a> </p>  
+     
+     <p>4. <a href="credentialsForm.xhtml">Go back to the credentials page </a> </p>   
+   
+  </body>
+</html>

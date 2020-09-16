@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <title>Widget Purchase Form</title>
+  <link rel="stylesheet" href="css/megamax.css">
+  <body>
+    <form id="widgetForm" method="post" action="/submission_url" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Customer Details</legend>
+        <label>Customer Name:</label>
+        <input type="text" placeholder="First name - Second name" autofocus> <br>
+        <label>Date of birth:</label>
+        <input type="date" name="bday"> <br>
+        <label>email:</label>
+        <input type="email" name="email"> <br>
+        <label>Mobile:</label>
+        <input type="text" name="Mobile"><br>
+        <label>Address:</label>
+        <textarea rows="4" cols="40" placeholder="Provide first line of address and a valid postcode.">
+        </textarea><br>
+        <label>Method to contact you:</label>
+        <input type="checkbox" name="contact" value="email">email
+        <input type="checkbox" name="contact" value="post">Post
+        <input type="checkbox" name="contact" value="phone">Phone
+        <input type="checkbox" name="contact" value="Other">Other
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Widget type:</legend>
+        <label>Widget size:</label>
+        <select name="widgetsize">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select><br>
+        <label>Number of widgets</label>
+        <label>Pick a number (between 1 and 10):</label>
+        <input type="number" name="quantity" min="1" max="10"><br>
+        <label>How important is colour of widget?</label><br>
+        <label>Unimportant</label>
+        <input type="range" min="0" max="100"><label>Very important</label>
+        <br>
+        <label>Choose Widget colour:</label>
+        <input type="color" name="favcolor" value="#FF6600">
+        <br>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Estimated date and time of delivery</legend>
+        <label>Estimated delivery date:</label><input type="date" name="d_date"> <br>
+        <label>Estimated delivery time:</label><input type="time" name="d_time">
+      </fieldset>
+      <br>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
