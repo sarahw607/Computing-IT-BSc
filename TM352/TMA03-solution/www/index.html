@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta http-equiv="Content-Security-Policy">
+    <script type="text/javascript" src="cordova.js"></script>
+    <!-- jQuery -->
+    <link rel="stylesheet" type="text/css" href="js/jquery-1.5.0.mobile.min.css">
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js" id="cordova-jquery"></script>
+    <script type="text/javascript" id="jqm-trans-disable">
+        /* For having a faster transition */
+        $(document).on("mobileinit", function () {
+            $.mobile.defaultPageTransition = "none";
+            $.mobile.defaultDialogTransition = "none";
+        });
+    </script>
+    <script type="text/javascript" src="js/jquery-1.5.0.mobile.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <title>Taxi Sharing</title>
+</head>
+
+<body>
+    <div class="app">
+        <h1>Taxi Sharing</h1>
+        <canvas style="width:100%;height:50%;" id="map_canvas">
+        </canvas>
+        <div data-role="controlgroup" data-type="horizontal">
+            <div>
+                Name
+                <input id="name" type="text" />
+            </div>
+            <div>
+                Start
+                <input id="start" type="text" />
+            </div>
+            <div>
+                End
+                <input id="end" type="text" />
+            </div>
+            <div>
+                Pickup Address
+                <input id="addr" type="text" />
+            </div>
+        </div>
+        <div data-role="controlgroup" data-type="horizontal">
+            <!-- TODO 1(b)(i)-(v) Function buttons:
+                (i) register (ii) volunteer (iii) request (iv) cancel (v) start / stop
+                -->
+            <button type "button" id="register">Register</button>
+            <button type="button" id="volunteer" onclick="">Volunteer</button>
+            <button type="request" id="request">Request</button>
+            <button type="button" id="cancel">Cancel</button>
+            <button type="button" id="start-stop">Start/Stop</button>
+        </div>
+    </div>
+</body>
